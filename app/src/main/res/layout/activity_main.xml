@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <ProgressBar
+      android:id="@+id/pb_loading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:visibility="gone"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/rl_main_layout"
+      android:visibility="visible"
+      >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="25dp"
+        android:id="@+id/cv_toolbar">
+      
+      
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/purple_200"
+          android:id="@+id/rl_toolbar">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+          android:layout_margin="15dp"
+          app:cardCornerRadius="10dp">
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:id="@+id/et_get_city_name"
+            android:hint="Search"
+              android:drawableStart="@drawable/baseline_search_24"
+              android:drawablePadding="15dp"
+              android:imeOptions="actionSearch"
+              android:inputType="text"
+              android:paddingStart="15dp"
+              android:paddingEnd="15dp"
+              android:background="@color/white"
+              android:drawableTint="@color/black"
+              android:textColor="@color/black"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+      </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+    android:id="@+id/rl_sub_layout"
+    android:layout_below="@id/cv_toolbar">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_weather_bg"
+          android:src="sn"/>
+      
+      
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>
