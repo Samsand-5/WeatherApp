@@ -15,7 +15,7 @@
 
   <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
       android:id="@+id/rl_main_layout"
       android:visibility="visible"
       >
@@ -69,27 +69,40 @@
   <RelativeLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-    android:id="@+id/rl_sub_layout"
-    android:layout_below="@id/cv_toolbar">
+      android:id="@+id/rl_sub_layout"
+       android:layout_marginTop="80dp">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-      
+
       <ImageView
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:id="@+id/iv_weather_bg"
-          android:src="sn"/>
+          android:scaleType="centerCrop"
+          android:id="@+id/iv_weather_bg"
+          android:src="@color/snow"/>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp">
+
+
+
+
+
+      </LinearLayout>
+
       
       
     </FrameLayout>
 
 
 </RelativeLayout>
-
-
 
 
 </RelativeLayout>
