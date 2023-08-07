@@ -230,11 +230,21 @@
               android:orientation="vertical"
               android:padding="5dp">
 
-              <androidx.constraintlayout.utils.widget.ImageFilterView
+              <ImageView
                   android:layout_width="25dp"
                   android:layout_height="25dp"
                 android:layout_gravity="center_horizontal"
+                  android:src="@drawable/pressure"
                 />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textColor="@color/white"
+                  android:text="100"
+                  android:textSize="23sp"/>
 
 
             </LinearLayout>
