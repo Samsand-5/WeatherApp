@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="30dp"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/gradient_1"
     tools:context=".MainActivity">
 
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -186,7 +186,7 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/humidity"
+            android:src="@drawable/wind"
             app:tint="#FFFFFF" />
 
         <Space
